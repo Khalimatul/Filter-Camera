@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/heads_container"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@color/colorPrimary"></FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_camera"
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/bg"
+        tools:context="joss.polinema.firebase.CameraActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+        <!-- Display Image yang diambil -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_below="@+id/tvPreview"/>
+        <!-- Untuk mengambil Image/Gambar -->
+        <Button
+            android:id="@+id/btnCapture"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take a picture"
+            android:layout_below="@+id/imgPreview" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCapture"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/effect">
+            <Button
+                android:id="@+id/btnGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Gray"/>
+            <Button
+                android:id="@+id/btnNegatif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Negatif"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/effect"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+           >
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/logout"
+                android:textColor="@color/white"
+                android:onClick="signout"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

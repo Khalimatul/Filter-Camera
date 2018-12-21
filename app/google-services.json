@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "592719650306",
+    "firebase_url": "https://fir-685ca.firebaseio.com",
+    "project_id": "fir-685ca",
+    "storage_bucket": "fir-685ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592719650306:android:92997c9935163a7c",
+        "android_client_info": {
+          "package_name": "joss.polinema.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592719650306-m5dhe0calp9rhtt0rk66baeonl1t0u2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "joss.polinema.firebase",
+            "certificate_hash": "cb09d35fb8c3e6eb9e7fbcb0957e78cea6a8af8a"
+          }
+        },
+        {
+          "client_id": "592719650306-nvfnidirq4ssdl8thh3tmb56k9hc5jo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGPNWCPAqC_YLOPBc7yFyOk-Oyx364FAg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592719650306-nvfnidirq4ssdl8thh3tmb56k9hc5jo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
